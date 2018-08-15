@@ -2,7 +2,9 @@
 
 Ejemplo de como visualizar mediante Leaflet la ubicación de los distintos autobuses, con los datos proporcionados por el Excmo. Ayto. de Málaga.
 
-![captura](https://user-images.githubusercontent.com/9201111/44165000-e2466380-a0c7-11e8-9d32-07b5203bdb7c.PNG)
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/9201111/44165000-e2466380-a0c7-11e8-9d32-07b5203bdb7c.PNG">
+</p>
 
 ## ¿Cómo usarlo?
 
