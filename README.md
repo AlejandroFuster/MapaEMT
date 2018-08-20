@@ -8,7 +8,7 @@ Ejemplo de como visualizar mediante Leaflet la ubicación de los distintos autob
 
 ## ¿Cómo usarlo?
 
-Puedes abrir el "index.html" que se encuentra en la carpeta "src" para poder visualizar en cualquier navegador el mapa.
+Puede abrir el "index.html" que se encuentra en la carpeta "src" para poder visualizar en cualquier navegador el mapa.
 
 ### Datos utilizados
 
@@ -32,7 +32,7 @@ En el código de este ejemplo, se puede ver una manera tratar los datos para pod
 
 ## Colaborar
 
-¡Siéntete libre de abrir cualquier issue o colaborar con el proyecto de cualquier manera! Cualquier aportación será bienvenida. 
+¡Sientáse libre de abrir cualquier issue o colaborar con el proyecto de cualquier manera! Cualquier aportación será bienvenida. 
 
 ## Autor
 
