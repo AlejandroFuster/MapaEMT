@@ -18,15 +18,15 @@ $.ajax({
     var data = result.result.records;
     // Iteramos
     data.forEach(function(point) {
-            var feature = {
-                type: 'Feature',
-                properties: point,
-                geometry: {
-                    type: 'Point',
-                    coordinates: [point.lon, point.lat]
-                }
-            };
-            jsonFeatures.push(feature);        
+        var feature = {
+            type: 'Feature',
+            properties: point,
+            geometry: {
+                type: 'Point',
+                coordinates: [point.lon, point.lat]
+            }
+        };
+        jsonFeatures.push(feature);
     });
 }).fail(function(error) {
     console.error(error);
@@ -38,14 +38,13 @@ var geoJson = {
 };
 
 
-var coordinates = L.geoJson(geoJson,{
-  onEachFeature: function (feature, layer) {
-    layer.bindPopup('<h1>'+feature.properties._id + '</h1>'
-    +'<p>C&oacute;digo de l&iacute;nea: '+feature.properties.codLinea +'<br>'
-    +'C&oacute;digo de bus: '+feature.properties.codBus +'<br>'
-    +'C&oacute;digo de parada inicial: '+feature.properties.codParIni +'<br>'
-    +'Sentido: '+feature.properties.sentido +'<br>'
-    +'&Uacute;ltima actualizaci&oacute;n: '+feature.properties.last_update+'</p>');
-  }}).addTo(map);
-
-
+var coordinates = L.geoJson(geoJson, {
+    onEachFeature: function(feature, layer) {
+        layer.bindPopup('<h1>' + feature.properties._id + '</h1>' +
+            '<p>C&oacute;digo de l&iacute;nea: ' + feature.properties.codLinea + '<br>' +
+            'C&oacute;digo de bus: ' + feature.properties.codBus + '<br>' +
+            'C&oacute;digo de parada inicial: ' + feature.properties.codParIni + '<br>' +
+            'Sentido: ' + feature.properties.sentido + '<br>' +
+            '&Uacute;ltima actualizaci&oacute;n: ' + feature.properties.last_update + '</p>');
+    }
+}).addTo(map);
